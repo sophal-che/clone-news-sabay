@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -10px;
+}
+
+.mx-0 {
+    margin-inline: 0 !important;
+}
+
+.col-4 {
+    width: calc(100% / 3);
+}
+
+.col-3 {
+    width: 25%;
+    padding-inline: 10px;
+}
+
+.col-8 {
+    width: 66.666666666%;
+}
+
+.col-9 {
+    width: 75%;
+    padding-inline: 15px;
+}
+
+
+/* News Main Block */
+
+.news-main .news-box {
+    width: 100%;
+    height: 280px;
+    position: relative;
+}
+
+.stretched-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.news-main .news-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+}
+
+.news-main .news-box .bg-overlay-img {
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.news-main .news-box .bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent, #000);
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.news-main .news-box:hover .bg-overlay {
+    opacity: 1;
+}
+
+
+.news-main .news-box .news-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.news-main .news-box .news-content-title {
+    height: calc(280px - 50px);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.news-main .news-box .news-content-title h3 {
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-main .news-box:hover .news-content-title h3 {
+    color: red;
+}
+
+.news-main .news-box .news-content-title h3,
+.news-main .news-box .news-content-title p {
+    transform: translateY(40px);
+    transition: 0.3s;
+}
+
+.news-main .news-box:hover .news-content-title h3,
+.news-main .news-box:hover .news-content-title p {
+    transform: translateY(0px);
+}
+
+
+.news-main .news-box .news-content-title p {
+    color: #fff;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-main .news-box .news-content-date {
+    height: 50px;
+    align-content: center;
+    padding-left: 20px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    width: 100%;
+    height: 280px;
+    background-color: aquamarine;
+}
